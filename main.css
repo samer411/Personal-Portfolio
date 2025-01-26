@@ -1,1 +1,59 @@
-بسم الله
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courgette';
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 0;
+}
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+.navbar-brand img{
+    width:50px;
+    border-radius: 20%;
+    margin:0 20px;
+}
+.navbar-links{
+    margin-right:20px;
+    display: flex;
+    gap:20px;
+}
+.navbar-links a{
+    font-size:1.5rem;
+    text-decoration: none;
+    color:black;
+    position:relative;
+}
+.navbar-links a:not(:last-child)::after{
+    content:"/";
+    margin-left:10px;
+    font-size:1.2rem
+}
+main{
+    height:87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+main p{
+    font-size:1.2rem;
+}
+
