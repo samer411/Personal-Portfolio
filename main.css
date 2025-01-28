@@ -42,18 +42,25 @@ header{
     margin-left:10px;
     font-size:1.2rem
 }
-main{
+.home{
     height:87vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-main h1{
+.home h1{
     font-size:3rem;
     margin-bottom:20px;
 }
-main p{
+.home p{
     font-size:1.2rem;
 }
+.grid{
+    display: grid;
+    height:100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
 
+}
